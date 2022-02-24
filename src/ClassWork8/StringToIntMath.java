@@ -26,7 +26,5 @@ public class StringToIntMath {
         System.out.println("Average = " + average);
         System.out.println("Max = " + max);
         System.out.println("Min = " + min);
-
-
     }
 }
