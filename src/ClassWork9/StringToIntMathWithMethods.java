@@ -13,13 +13,13 @@ public class StringToIntMathWithMethods {
             numbers[i] = Integer.parseInt(textSplit[i]);
         }
 
-        System.out.println("Sum = " + Sum(numbers));
-        System.out.println("Average = " + Average(numbers));
-        System.out.println("Max = " + Max(numbers));
-        System.out.println("Min = " + Min(numbers));
+        System.out.println("Sum = "     + SumInArray(numbers));
+        System.out.println("Average = " + AverageInArray(numbers));
+        System.out.println("Max = "      + MaxInArray(numbers));
+        System.out.println("Min = "     + MinInArray(numbers));
     }
 
-    static int Max(int[] array){
+    static int MaxInArray(int[] array){
         int max = Integer.MIN_VALUE;
         for(int i : array) {
             if(i > max){
@@ -29,7 +29,7 @@ public class StringToIntMathWithMethods {
         return max;
     }
 
-    static int Min(int[] array){
+    static int MinInArray(int[] array){
         int min = Integer.MAX_VALUE;
         for(int i : array) {
             if(i < min){
@@ -39,7 +39,7 @@ public class StringToIntMathWithMethods {
         return min;
     }
 
-    static int Sum(int[] array){
+    static int SumInArray(int[] array){
         int sum = 0;
         for(int i : array){
             sum += i;
@@ -47,8 +47,8 @@ public class StringToIntMathWithMethods {
         return sum;
     }
 
-    static double Average(int[] array){
-        return (double)Sum(array) / array.length;
+    static double AverageInArray(int[] array){
+        return (double) SumInArray(array) / array.length;
     }
 
 }
