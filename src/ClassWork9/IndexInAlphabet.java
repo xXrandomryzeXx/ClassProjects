@@ -10,7 +10,5 @@ public class IndexInAlphabet {
         for(char ch : str.toCharArray()){
             System.out.println(ch + " -> " + ((int)ch-'a'));
         }
-
-
     }
 }
