@@ -1,26 +1,33 @@
 package ClassWork11;
 
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
-public class ArrayWork {
+public class ArrayWorkAdvanced {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         String text = input.nextLine();
         String[] arr = text.split(" ");
-        int n = Integer.parseInt(input.nextLine());
+        String[] command;
 
-        for(int i = 0; i < n; i++){
-            String[] command = input.nextLine().split(" ");
+        do{
+            command = input.nextLine().split(" ");
             if(command[0].equals("Reverse")){
                 arr = Reverse(arr);
             }else if(command[0].equals("Distinct")){
                 arr = Distinct(arr);
             }else if(command[0].equals("Replace")){
-                arr = Replace(arr, Integer.parseInt(command[1]), command[2]);
+                if(Integer.parseInt(command[1]) >= 0 &&
+                        Integer.parseInt(command[1]) < arr.length - 1 &&
+                        !command[2].equals(arr[Integer.parseInt(command[1])])){
+                    arr = Replace(arr, Integer.parseInt(command[1]), command[2]);
+                }else{
+                    System.out.println("Invalid input!");
+                }
+            }else{
+                if(!command[0].equals("END")) System.out.println("Invalid command!");
             }
-        }
+        }while(!command[0].equals("END"));
 
         for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + ((i < arr.length - 1)? ", ": ""));
