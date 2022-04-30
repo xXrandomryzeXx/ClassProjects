@@ -1,4 +1,4 @@
-package IADS_Work.MergeSort;
+package IADS_Work.Theme15;
 
 public class MergeSortMethods {
     static void merge(int[] arr, int l, int m, int r)

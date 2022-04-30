@@ -1,4 +1,4 @@
-package IADS_Work.QuickSort;
+package IADS_Work.Theme14;
 
 import java.util.Arrays;
 import java.util.Random;

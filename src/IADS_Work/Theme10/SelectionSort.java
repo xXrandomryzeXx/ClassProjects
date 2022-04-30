@@ -1,4 +1,4 @@
-package IADS_Work;
+package IADS_Work.Theme10;
 
 import java.util.Arrays;
 import java.util.Random;

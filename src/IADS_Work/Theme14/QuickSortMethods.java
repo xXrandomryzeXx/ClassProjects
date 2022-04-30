@@ -1,4 +1,4 @@
-package IADS_Work.QuickSort;
+package IADS_Work.Theme14;
 
 public class QuickSortMethods {
 

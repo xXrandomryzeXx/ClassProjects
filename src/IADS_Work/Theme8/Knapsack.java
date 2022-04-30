@@ -1,4 +1,4 @@
-package IADS_Work;
+package IADS_Work.Theme8;
 
 import java.util.Scanner;
 

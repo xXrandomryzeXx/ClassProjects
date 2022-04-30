@@ -1,4 +1,4 @@
-package IADS_Work.MergeSort;
+package IADS_Work.Theme15;
 
 import java.util.Arrays;
 import java.util.Random;
